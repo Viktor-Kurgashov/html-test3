@@ -1,0 +1,132 @@
+header {
+  background: url('background.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+h1 > span {
+  color: #fcf400;
+}
+
+.header-block__image {
+  width: auto;
+  height: 175px;
+  border-radius: 50%;
+}
+
+.header-block__text {
+  background: url('pros.svg') no-repeat left 8px;
+  background-size: 26px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.header-item {
+  background: #f5faff url('thumbnail1.jpg') no-repeat center 18px;
+  padding: 122px 5% 18px;
+  border-radius: 6px;
+  color: black;
+}
+
+.header-item:nth-child(2) {
+  background-image: url('thumbnail2.jpg');
+}
+
+.header-item:last-child {
+  background-image: url('thumbnail3.jpg');
+}
+
+
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  .header-block {
+    max-width: 400px;
+    margin: 45px 0 58px;
+  }
+
+  .header-block__image {
+    align-self: center;
+  }
+
+  .header-block__text:first-of-type {
+    margin: 35px 0 18px;
+  }
+
+  .header-list {
+    margin-top: 58px;
+    max-width: 360px;
+    row-gap: 36px;
+  }
+}
+
+
+
+@media screen and (min-width: 641px) {
+  .header-block {
+    margin: 36px 0 50px;
+    justify-content: center;
+    position: relative;
+    max-width: 720px;
+    min-height: 175px;
+    padding-left: 205px;
+    row-gap: 14px;
+  }
+
+  .header-block__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  h1 {
+    font-size: 41px;
+    line-height: 55px;
+  }
+
+  .header-list {
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 640px;
+    margin-top: 50px;
+    gap: 36px 6%;
+  }
+
+  .header-item {
+    flex-basis: 47%;
+  }
+}
+
+
+
+@media screen and (min-width: 961px) {
+  h1 {
+    font-size: 56px;
+    line-height: 72px;
+    max-width: 925px;
+  }
+
+  .header-block {
+    margin: 42px 0 52px;
+  }
+
+  .header-list {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-top: 52px;
+  }
+
+  .header-item {
+    flex-basis: 30%;
+  }
+}

@@ -1,0 +1,10 @@
+.smiles-list {
+  max-width: 1080px;
+  gap: 24px;
+}
+
+.smiles-photo {
+  width: 240px;
+  height: auto;
+  cursor: pointer;
+}

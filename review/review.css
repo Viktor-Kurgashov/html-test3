@@ -1,0 +1,83 @@
+.review-content {
+  max-width: 480px;
+  align-items: center;
+  row-gap: 45px;
+  text-align: center;
+}
+
+.review-person {
+  background: #dbf5ff url('avatar.jpg') no-repeat top center;
+  background-size: contain;
+  padding: 240px 12px 15px;
+  border-radius: 6px;
+  width: 240px;
+}
+
+.review-person__name {
+  font-size: 20px;
+  line-height: 27px;
+  margin: 25px 0 5px;
+}
+
+.review-person__name + ._title {
+  font-weight: 400;
+}
+
+.review-person__yt-btn {
+  background: white url('yt.svg') no-repeat center;
+  background-size: 60px auto;
+  border-radius: 18px;
+  align-self: flex-end;
+  width: 80px;
+  height: 60px;
+}
+
+.review-modal {
+  background: rgba(0,0,0,0.5) url('close.svg') no-repeat calc(100% - 15px) 15px;
+  background-size: 40px;
+}
+
+.review-modal__video {
+  margin: calc(50vh - 216px) auto 0;
+  width: min(768px, 90%);
+  height: 432px;
+}
+
+.review-sites {
+  gap: 25px;
+}
+
+.review-sites__title {
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.review-sites__link {
+  background: url('logo1.jpg') no-repeat center;
+  background-size: contain;
+  width: 150px;
+  height: 50px;
+}
+
+.review-sites__link:nth-of-type(2) { background-image: url('logo2.jpg'); }
+.review-sites__link:nth-of-type(3) { background-image: url('logo3.jpg'); }
+.review-sites__link:nth-of-type(4) { background-image: url('logo4.jpg'); }
+.review-sites__link:last-of-type { background-image: url('logo5.jpg'); }
+
+
+
+@media screen and (min-width: 768px) {
+  .review-content {
+    max-width: 800px;
+    max-height: 555px;
+    flex-flow: column wrap;
+    gap: 35px 40px;
+  }
+
+  .review-text,
+  .review-sites {
+    max-width: calc(100% - 280px);
+  }  
+}

@@ -1,0 +1,60 @@
+.gallery {
+  overflow-x: hidden;
+  background: white;
+}
+
+.gallery__close,
+.gallery__left,
+.gallery__right {
+  background: rgba(242, 242, 242, 0.8) url('close.svg') no-repeat center;
+  background-size: 30px;
+  border-radius: 50%;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+}
+
+.gallery__close {
+  right: 15px;
+  top: 15px;
+}
+
+.gallery__left {
+  background-image: url('left.svg');
+  background-position-x: 6px;
+  top: calc(50% - 27px);
+  left: 15px;
+}
+
+.gallery__right {
+  background-image: url('right.svg');
+  background-position-x: 10px;
+  top: calc(50% - 27px);
+  right: 15px;
+}
+
+.gallery__left:disabled,
+.gallery__right:disabled {
+  opacity: 0.2;
+}
+
+.gallery__list {
+  margin-left: -100%;
+  display: flex;
+  min-width: 400%;
+  height: 100%;
+}
+
+.gallery__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  transition: width 0.5s;
+}
+
+.gallery__image {
+  width: 90%;
+  height: 90%;
+  object-fit: scale-down;
+}

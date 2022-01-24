@@ -1,0 +1,77 @@
+.doctors {
+  padding: 50px 5%;
+}
+
+.doctor {
+  background: white url('avatar1.jpg') no-repeat center 36px;;
+  background-size: auto 270px;
+  border-radius: 10px;
+}
+
+.doctor:last-of-type {
+  background-image: url('avatar2.jpg');
+}
+
+.doctor__plus {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 47px;
+  height: 45px;
+  padding: 0 22px;
+  align-self: center;
+  background: #0f5a9e;
+  border-radius: 4px;
+  color: white;
+}
+
+.doctor__name {
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 32px;
+}
+
+.doctor__stack {
+  font-weight: 400;
+  margin: 16px 0 14px;
+}
+
+.doctor__courses {
+  margin: 32px 0 14px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .doctor {
+    max-width: 400px;
+    padding: 340px 5% 32px;
+    text-align: center;
+  }
+
+  .doctor__plus:nth-of-type(2) {
+    margin-top: 22px;
+  }
+}
+
+
+
+@media screen and (min-width: 769px) {
+  .doctor {
+    max-width: 1000px;
+    padding: 33px 5% 30px 260px;
+    background-position: 33px 33px;
+    flex-flow: row wrap;
+    column-gap: 22px;
+  }
+
+  .doctor__name,
+  .doctor__courses {
+    flex-basis: 100%;
+    margin-top: 24px;
+  }
+
+  .doctor__stack,
+  .doctor__courses {
+    margin: 18px 0 12px;
+  }
+}

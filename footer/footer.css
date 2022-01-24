@@ -1,0 +1,31 @@
+footer {
+  background: #0f5a9e;
+  padding: 50px 5% 30px;
+  color: white;
+}
+
+footer > h2 {
+  color: white;
+}
+
+footer > .page-form {
+  margin: 45px 0 60px;
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .footer-text {
+    align-items: center;
+    row-gap: 14px;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .footer-text {
+    width: 100%;
+    max-width: 960px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

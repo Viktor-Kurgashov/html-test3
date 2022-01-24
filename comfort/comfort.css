@@ -1,0 +1,51 @@
+.comfort-wrapper {
+  padding-top: 55px;
+}
+
+.comfort-list {
+  row-gap: 30px;
+}
+
+.comfort-item {
+  background: url('plus-solid.svg') no-repeat left 6px;
+  background-size: 25px auto;
+  padding-left: 40px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .comfort {
+    max-width: 480px;
+    margin: 0 auto;
+    row-gap: 45px;
+  }
+
+  .comfort-image {    
+    width: 100%;
+    max-width: 360px;
+    align-self: center;
+    border-radius: 8px;
+  }
+}
+
+
+
+@media screen and (min-width: 769px) {  
+  .comfort {
+    flex-flow: row wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 45px 4%;
+  }
+
+  .comfort-image {
+    border-radius: 8px;
+    width: 33%;
+  }
+
+  .comfort-list {
+    max-width: 63%;
+  }
+}

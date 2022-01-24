@@ -1,0 +1,30 @@
+.credit {
+  background: url('bg.jpg') no-repeat center;
+  background-size: cover;
+  padding: 65px 5% 75px;
+}
+
+.credit-header {
+  color: white;
+  font-size: 28px;
+  line-height: 39px;
+  max-width: 1000px;
+}
+
+.credit-header > span {
+  color: #fcf400;
+}
+
+@media screen and (min-width: 641px) {
+  .credit-header {
+    font-size: 35px;
+    line-height: 49px;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .credit-header {
+    font-size: 42px;
+    line-height: 59px;
+  }
+}

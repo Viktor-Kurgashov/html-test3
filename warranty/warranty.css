@@ -1,0 +1,120 @@
+.warranty-list {
+  row-gap: 22px;
+}
+
+.warranty-item {
+  background: url('shield-plus.png') no-repeat left 5px;
+  background-size: auto 43px;
+  padding-left: 47px;
+}
+
+.warranty-item > ._title {
+  margin-bottom: 5px;
+}
+
+.warranty-stats__value {
+  color: #0f5a9e;
+  font-size: 50px;
+  line-height: 66px;
+  font-weight: 600;
+  font-family: 'Roboto';
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .warranty-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  .warranty-image {
+    width: min(360px, 100%);
+  }
+
+  .warranty-list {
+    max-width: 480px;
+    margin: 50px 0 35px;
+  }
+
+  .warranty-stats {
+    text-align: center;
+    row-gap: 20px;
+  }
+}
+
+
+
+@media screen and (min-width: 769px) {
+  .warranty-content {
+    display: grid;
+    align-items: start;
+    margin-top: 45px;
+    gap: 35px 5%;
+  }
+
+  .warranty-image {
+    grid-area: image;
+  }
+
+  .warranty-list {
+    grid-area: list;
+  }
+
+  .warranty-stats {
+    grid-area: stats;
+    flex-direction: row;
+  }
+
+  .warranty-stats__item {
+    max-width: 200px;
+  }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .warranty-content {
+    grid-template:
+      "image list" auto
+      "stats stats" auto
+      / 33% auto;
+    justify-items: center;
+  }
+
+  .warranty-image {
+    width: min(244px, 100%);
+    justify-self: end;
+  }
+
+  .warranty-stats {
+    text-align: center;
+    column-gap: 18px;
+  }
+}
+
+
+
+@media screen and (min-width: 961px) {
+  .warranty-content {
+    grid-template:
+      "image list" auto
+      "image stats" auto
+      / 33% auto;
+    max-width: 1000px;
+  }
+
+  .warranty-image {
+    width: 100%;
+  }
+
+  .warranty-stats__item {
+    width: 28%;
+  }
+
+  .warranty-stats__item:first-of-type {    
+    width: 42%;
+  }
+}
